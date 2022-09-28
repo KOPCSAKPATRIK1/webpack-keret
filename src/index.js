@@ -27,6 +27,12 @@ function borderColor()
     document.getElementById('kep').style.borderColor = color
 }
 
+function toggleMode()
+{
+    var element = document.body;
+    element.classList.toggle("dark-mode")
+}
+
 function init()
 {
     console.log("Loaded");
@@ -34,6 +40,7 @@ function init()
     document.getElementById('width').addEventListener('change',width);
     document.getElementById('border').addEventListener('change',borderWidth);
     document.getElementById('color').addEventListener('input',borderColor);
+    document.getElementById('toggleMode').addEventListener('click', toggleMode)
 
 }
 
