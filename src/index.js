@@ -5,25 +5,35 @@ import 'bootstrap/dist/css/bootstrap.css';
 function ChangeKep()
 {
     let url = document.getElementById('url').value;
-    document.getElementById('width').defaultValue = document.getElementById('kep').width;
-    let width = document.getElementById('width').value;
-    let border = document.getElementById('width').value;
-    let color = document.getElementById('width').value;
     document.getElementById('kep').src = url;
+    document.getElementById('width').defaultValue = document.getElementById('kep').width;
+}
+
+function width()
+{
+    let width = document.getElementById('width').value;
     document.getElementById('kep').width = width;
-    document.getElementById('kep').style.border = border;
+}
 
+function borderWidth()
+{
+    let border = document.getElementById('border').value;
+    document.getElementById('kep').style.border = border + 'px solid black' ;
+}
 
-
+function borderColor()
+{
+    let color = document.getElementById('color').value;
+    document.getElementById('kep').style.borderColor = color
 }
 
 function init()
 {
     console.log("Loaded");
     document.getElementById('url').addEventListener('input',ChangeKep);
-    document.getElementById('width').addEventListener('change',ChangeKep);
-    document.getElementById('border').addEventListener('input',ChangeKep);
-    document.getElementById('color').addEventListener('input',ChangeKep);
+    document.getElementById('width').addEventListener('change',width);
+    document.getElementById('border').addEventListener('change',borderWidth);
+    document.getElementById('color').addEventListener('input',borderColor);
 
 }
 

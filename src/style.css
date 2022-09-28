@@ -1,17 +1,22 @@
-#menu
+#urls
 {
-    padding: 40px;
+    color: white;
+    background-color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #header
 {
-    padding: 10px;
+    color: white;
+    background-color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #color
 {
-    margin-left: 25px;
-    width: 120px;
+    
 }
 
 #megjelenit
@@ -26,6 +31,21 @@
     display: block;
   margin-left: auto;
   margin-right: auto;
-    border-color: black;
-    border-width: 23px;
+}
+
+.input{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: center;
+}
+
+.xd
+{
+    color: white;
+    background-color: rgb(99, 99, 99);
 }

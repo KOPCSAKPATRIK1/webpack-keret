@@ -16,29 +16,32 @@
             </div>
         </div>
         <div class="row" >
-            <div class="col-sm-12" id="menu">
-                <p>Kép URL-je   <input type="url" id="url"
-                    placeholder="https://example.com"
-                    pattern="https://.*" size="30"
-                    required></p>
-                            
-                <p>Kép széllesége (max 1200px) <input id="width" type="number" step="20"></p>
-               
-                <p>Keret vastagsága<input id="border" type="number"></p>
-                
-                <p>Kép keret szine <input id="color" type="color"> </p>
-               
-                <p></p>
+            <div class="col-md-3" id="urls">
+                <p>Kép URL-je</p>
+                <input class="input" type="url" id="url" placeholder="https://example.com">                                                                                                       
+            </div>
+            <div class="col-md-3 xd">
+                <p>Kép széllesége (max 1200px) </p>
+                <input class="input" id="width" type="number" max="1200" step="20" min="100">
+            </div>
+            <div class="col-md-3 xd" >
+                <p>Keret vastagsága</p>
+                <input class="input" id="border" type="number" min="0">
+            </div>
+            <div class="col-md-3 xd">
+                <p>Kép keret szine </p>
+                <input class="input" id="color" type="color"> 
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-sm-12">
                 <img id="kep" class="center" src="" alt="" srcset="">
             </div>
         </div>
-    </div>
-    
+<br>
 
-   
+
+    </div>
 </body>
 </html>
